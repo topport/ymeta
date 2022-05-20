@@ -1,0 +1,76 @@
+// =================================
+// ==============custom==========
+// =================================
+
+:deep(.el-table th),
+:deep(.el-table td) {
+  padding: 16px 0;
+}
+
+:deep(.el-table th > .cell) {
+  font-size: 16px;
+}
+
+:deep(.el-table .cell) {
+  padding: 0 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.toimc-custom-popper {
+  padding: 0 !important;
+  .el-tabs__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .el-tabs__item {
+    flex: 1;
+    text-align: center;
+    height: 45px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.rotate-icon {
+  transition: all 0.5s;
+
+  .active {
+    transform: rotate(180deg);
+  }
+}
+
+.el-rate__item {
+  @apply: "!flex";
+}
+
+.el-table__inner-wrapper {
+  &:before {
+    height: unset !important;
+  }
+}
+
+@layer base {
+  [type='text']:focus,
+  [type='email']:focus,
+  [type='url']:focus,
+  [type='password']:focus,
+  [type='number']:focus,
+  [type='date']:focus,
+  [type='datetime-local']:focus,
+  [type='month']:focus,
+  [type='search']:focus,
+  [type='tel']:focus,
+  [type='time']:focus,
+  [type='week']:focus,
+  [multiple]:focus,
+  textarea:focus,
+  select:focus {
+    --tw-ring-color: unset !important;
+    --tw-ring-offset-shadow: unset !important;
+    --tw-ring-shadow: unset !important;
+  }
+}
