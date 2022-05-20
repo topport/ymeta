@@ -1,9 +1,9 @@
 <template>
   <div class="transition-all duration-300" :style="{ width: menuWidth }">
-    <div class="logo-wrap flex items-center justify-center py-3 px-3 h-60px">
-      <img class="max-h-full" src="@/assets/images/logo.png" />
-    </div>
-    <div class="flex flex-row h-[calc(100%-60px)]">
+<!--    <div class="logo-wrap flex items-center justify-center py-3 px-3 h-60px">-->
+<!--&lt;!&ndash;      <img class="max-h-full" src="@/assets/images/logo.png" />&ndash;&gt;-->
+<!--    </div>-->
+    <div class="flex flex-row h-[calc(100%)]">
       <el-scrollbar class="side-top-menu-wrap">
         <Menu
           v-if="layout === 'mixbar'"
@@ -142,7 +142,7 @@
       color: var(--topside-menu-text-color);
       padding: 0 3px;
       .el-menu-item {
-        color: var(--topside-menu-text-color);
+        color: white;
         padding: 0 6px !important;
         font-size: 14px;
         line-height: unset;
@@ -169,17 +169,17 @@
   .side-main-menu-wrap {
     background-color: var(--side-main-menu-bg-color);
     :deep(.el-menu) {
-      background-color: var(--side-main-menu-bg-color);
-      color: var(--side-main-menu-text-color);
+      background-color: #ffffff;
+      color: black;
       .el-menu-item,
       .el-sub-menu__title {
-        background-color: var(--side-main-menu-bg-hover-color);
+        background-color: #ffffff;
         color: var(--side-main-menu-text-color);
         &:hover {
           color: var(--side-main-menu-text-hover-color);
         }
         &.is-active {
-          background-color: var(--side-main-menu-active-bg-color);
+          background-color: #ffffff;
           color: var(--side-main-menu-active-text-color);
         }
       }
@@ -187,20 +187,23 @@
   }
 
   .side-sub-menu-wrap {
-    background-color: var(--side-sub-menu-bg-color);
+    background-color: #ffffff;
+
+    box-shadow: 2px 0 8px 0 rgb(29 35 41 / 5%);
+    border-right: 1px solid #e6e6e6;
 
     :deep(.el-menu) {
       background-color: var(--side-sub-menu-bg-color);
       color: var(--side-sub-menu-text-color);
       .el-menu-item,
       .el-sub-menu__title {
-        background-color: var(--side-sub-menu-bg-hover-color);
-        color: var(--side-sub-menu-text-color);
+        background-color: #ffffff;
+        color: black;
         &:hover {
-          color: var(--side-sub-menu-text-hover-color);
+          color: black;
         }
         &.is-active {
-          background-color: var(--side-sub-menu-active-bg-color);
+          background-color: #409eff;
           color: var(--side-sub-menu-active-text-color);
           border-radius: 5px;
           padding: 0;
