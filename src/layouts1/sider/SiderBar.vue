@@ -1,8 +1,8 @@
 <template>
   <div class="transition-all duration-300" :style="{ width: menuWidth }">
-<!--    <div class="logo-wrap flex items-center justify-center py-3 px-3 h-60px">-->
-<!--&lt;!&ndash;      <img class="max-h-full" src="@/assets/images/logo.png" />&ndash;&gt;-->
-<!--    </div>-->
+    <!--    <div class="logo-wrap flex items-center justify-center py-3 px-3 h-60px">-->
+    <!--&lt;!&ndash;      <img class="max-h-full" src="@/assets/images/logo.png" />&ndash;&gt;-->
+    <!--    </div>-->
     <div class="flex flex-row h-[calc(100%)]">
       <el-scrollbar class="side-top-menu-wrap">
         <Menu
@@ -198,12 +198,12 @@
       .el-menu-item,
       .el-sub-menu__title {
         background-color: #ffffff;
-        color: black;
+        color: var(--side-sub-menu-text-color);
         &:hover {
-          color: black;
+          color: var(--side-sub-menu-text-hover-color);
         }
         &.is-active {
-          background-color: #409eff;
+          background-color: var(--side-sub-menu-active-bg-color);
           color: var(--side-sub-menu-active-text-color);
           border-radius: 5px;
           padding: 0;

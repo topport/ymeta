@@ -18,13 +18,13 @@ const mergeThemeSettings = _.merge(
   localThemeSettings !== null ? JSON.parse(localThemeSettings) : {}
 )
 
-const { 
-  layout, 
-  fixHeader, 
-  menuWidth, 
+const {
+  layout,
+  fixHeader,
+  menuWidth,
   darkMode,
   primaryColor,
-  tabPage 
+  tabPage
 } = mergeThemeSettings
 
 
@@ -34,11 +34,11 @@ const saveThemeSetting = (theme) => {
 
 export const useSettingsStore = defineStore('settings', {
   state: () => ({
-    layout: layout || 'siderbar',
+    layout: layout || 'mixbar',
     fixHeader: fixHeader || true,
     darkMode: darkMode || false,
     menuWidth: menuWidth || '266px',
-    primaryColor: primaryColor || '#409eff',
+    primaryColor: primaryColor || '#009688',
     tabPage: tabPage || true
   }),
   getters: {
@@ -70,19 +70,19 @@ export const useSettingsStore = defineStore('settings', {
     },
     setDarkMode(mode){
       this.darkMode = mode
-      saveThemeSetting(JSON.stringify(this.$state))      
+      saveThemeSetting(JSON.stringify(this.$state))
     },
     setPrimaryColor(color){
       this.primaryColor = color
-      saveThemeSetting(JSON.stringify(this.$state)) 
+      saveThemeSetting(JSON.stringify(this.$state))
     },
     setMenuWidth(menuWidth){
       this.menuWidth = menuWidth
-      saveThemeSetting(JSON.stringify(this.$state)) 
+      saveThemeSetting(JSON.stringify(this.$state))
     },
     setTabPage(tabPage){
       this.tabPage = tabPage
-      saveThemeSetting(JSON.stringify(this.$state)) 
+      saveThemeSetting(JSON.stringify(this.$state))
     },
     resetSetting(){
       this.$reset()

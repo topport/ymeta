@@ -16,16 +16,16 @@ const homeRoutes: Array<AppRouteRecordRaw> = [
     children: [
       {
         name: 'DashBoard',
-        path: 'dashboard',
+        path: '/home/dashboard',
         component: () => import('@/views/dashboard/welcome/index.vue'),
         meta: {
           title: t('menu.overview'),
           affix: true
         }
-      }, 
+      },
       {
         name: 'DashBoard1',
-        path: 'dashboard1',
+        path: '/home/dashboard1',
         component: () => import('@/views/dashboard/index.vue'),
         meta: {
           title: t('menu.dashboard'),

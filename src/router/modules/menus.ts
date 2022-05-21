@@ -16,7 +16,7 @@ const componentsRoutes: Array<AppRouteRecordRaw> = [
     children: [
       {
         name: 'Menus1',
-        path: 'menu',
+        path: '/menus/menu',
         meta: {
           title: t('menu.nest-menus.menu1')
         },
@@ -24,7 +24,7 @@ const componentsRoutes: Array<AppRouteRecordRaw> = [
         children: [
           {
             name: 'Menu1-1',
-            path: 'menu1-1',
+            path: '/menus/menu/menu1-1',
             component: () => import('@/views/menus/menu1-1.vue'),
             meta: {
               title: t('menu.nest-menus.menu1-1')

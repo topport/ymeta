@@ -54,7 +54,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
   // const isBuild = command === 'build'
   const lifecycle = process.env.npm_lifecycle_event
   return {
-    base: VITE_PUBLIC_PATH,
+    base: "/",
     root,
     esbuild: {
       pure: VITE_DROP_CONSOLE ? ['console.log', 'debugger'] : []

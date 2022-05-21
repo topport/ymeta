@@ -79,7 +79,22 @@
     "vue-router": "^4.0.15",
     "vxe-table": "^4.2.4-beta.2",
     "xe-utils": "^3.5.4",
-    "xlsx": "^0.18.5"
+    "xlsx": "^0.18.5",
+    "@element-plus/icons": "0.0.11",
+    "@tinymce/tinymce-vue": "4.0.5",
+
+    "core-js": "^3.8.3",
+
+    "nprogress": "^0.2.0",
+
+    "qrcodejs2": "0.0.2",
+    "qs": "^6.9.7",
+    "sortablejs": "1.14.0",
+    "tinymce": "5.10.2",
+
+    "vuedraggable": "4.0.3",
+    "xgplayer": "2.31.4",
+    "xgplayer-hls": "2.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.17.10",

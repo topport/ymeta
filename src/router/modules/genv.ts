@@ -18,7 +18,7 @@ const aboutRoutes: Array<AppRouteRecordRaw> = [
     children: [
       {
         name: 'GenvGrid',
-        path: 'index',
+        path: '/grid/index',
         meta: {
           title: 'grid'
         },

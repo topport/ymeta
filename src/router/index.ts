@@ -5,6 +5,7 @@ import type { RouteRecordRaw } from 'vue-router'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 import { sortMenu } from '@/utils'
+import {treeFilter, filterAsyncRouter, flatAsyncRoutes} from './util'
 
 const modules = import.meta.globEager('./modules/**/*.ts')
 
@@ -74,7 +75,7 @@ const publicRoutes = [
 ]
 
 export const asyncRoutes = sortMenu([...publicRoutes, ...routeModuleList])
-
+export default asyncRoutes
 const router = createRouter({
   history: createWebHashHistory(),
   routes: asyncRoutes as unknown as RouteRecordRaw[],
@@ -97,6 +98,12 @@ router.beforeEach((to, _, next) => {
       next({ path: '/login' })
     }
   }
+  let menuRouter = filterAsyncRouter(asyncRoutes)
+  menuRouter = flatAsyncRoutes(menuRouter)
+  menuRouter.forEach(item => {
+    console.log("leven",item)
+    router.addRoute('layout', item)
+  })
 })
 
 // config router

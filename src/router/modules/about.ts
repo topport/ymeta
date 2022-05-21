@@ -18,7 +18,7 @@ const aboutRoutes: Array<AppRouteRecordRaw> = [
     children: [
       {
         name: 'AboutPage',
-        path: 'index',
+        path: '/about/index',
         meta: {
           title: t('menu.about.about-us')
         },

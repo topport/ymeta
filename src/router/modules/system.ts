@@ -16,7 +16,7 @@ const systemRoutes: Array<AppRouteRecordRaw> = [
     children: [
       {
         name: 'UsersPage',
-        path: 'user',
+        path: '/system/user',
         meta: {
           title: t('menu.system.user')
         },
@@ -24,7 +24,7 @@ const systemRoutes: Array<AppRouteRecordRaw> = [
       },
       {
         name: 'RolesPage',
-        path: 'role',
+        path: '/system/role',
         meta: {
           title: t('menu.system.role')
         },
@@ -32,7 +32,7 @@ const systemRoutes: Array<AppRouteRecordRaw> = [
       },
       {
         name: 'MenusPage',
-        path: 'menu',
+        path: '/system/menu',
         meta: {
           title: t('menu.system.menu')
         },
@@ -40,7 +40,7 @@ const systemRoutes: Array<AppRouteRecordRaw> = [
       },
       {
         name: 'DepartmentPage',
-        path: 'department',
+        path: '/system/department',
         meta: {
           title: t('menu.system.department')
         },
@@ -48,7 +48,7 @@ const systemRoutes: Array<AppRouteRecordRaw> = [
       },
       {
         name: 'DictPage',
-        path: 'dict',
+        path: '/system/dict',
         meta: {
           title: t('menu.system.dict')
         },
@@ -56,7 +56,7 @@ const systemRoutes: Array<AppRouteRecordRaw> = [
       },
       {
         name: 'LogsPage',
-        path: 'logs',
+        path: '/system/logs',
         meta: {
           title: t('menu.system.logs')
         },

@@ -16,7 +16,7 @@ const pagesRoutes: Array<AppRouteRecordRaw> = [
     children: [
       {
         name: 'FormPages',
-        path: 'form',
+        path: '/page/form',
         component: () => import('@/views/pages/form/index.vue'),
         meta: {
           title: t('menu.pages.form.title')
@@ -34,7 +34,7 @@ const pagesRoutes: Array<AppRouteRecordRaw> = [
       },
       {
         name: 'DetailPages',
-        path: 'detail',
+        path: '/page/detail',
         component: () => import('@/views/pages/details/index.vue'),
         meta: {
           title: t('menu.pages.detail.title')

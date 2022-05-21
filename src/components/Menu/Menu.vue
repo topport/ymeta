@@ -49,7 +49,7 @@
       },
       backgroundColor: {
         type: String,
-        default: '#ffffff'
+        default: ''
       },
       textColor: {
         type: String,
@@ -76,6 +76,5 @@
 <style lang="scss" scoped>
   .el-menu {
     --el-menu-item-height: 50px;
-    background-color: #ffffff;
   }
 </style>
